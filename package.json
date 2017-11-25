@@ -1,25 +1,21 @@
 {
-  "name": "electron-quick-start",
+  "name": "time-tracker",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "tracks time",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
+  "repository": "https://github.com/ArjanJ/time-tracker",
+  "keywords": ["Electron", "quick", "start", "tutorial", "demo"],
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "electron-rebuild": "^1.6.0"
   },
   "dependencies": {
+    "leveldown": "^2.1.0",
     "pouchdb": "^6.3.4"
   }
 }
