@@ -7,12 +7,25 @@
     "start": "electron ."
   },
   "repository": "https://github.com/ArjanJ/time-tracker",
-  "keywords": ["Electron", "quick", "start", "tutorial", "demo"],
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "electron": "~1.7.8",
-    "electron-rebuild": "^1.6.0"
+    "electron-rebuild": "^1.6.0",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.9.1",
+    "webpack-merge": "^4.1.1"
   },
   "dependencies": {
     "leveldown": "^2.1.0",
