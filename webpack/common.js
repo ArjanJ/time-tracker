@@ -6,7 +6,7 @@ module.exports = function base(env) {
   return {
     entry: {
       app: path.resolve(__dirname, '../client/index'),
-      vendor: ['preact'],
+      vendor: [],
     },
     output: {
       filename: '[name].[hash].js',
@@ -33,7 +33,7 @@ module.exports = function base(env) {
       new HtmlWebpackPlugin({
         filename: 'index.html',
         inject: 'body',
-        template: path.resolve(__dirname, '../index.html'),
+        template: path.resolve(__dirname, '../../index.html'),
       }),
       new webpack.optimize.OccurrenceOrderPlugin(),
       new webpack.NoEmitOnErrorsPlugin(),
