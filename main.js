@@ -61,7 +61,7 @@ const getWindowPosition = () => {
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 300,
+    width: 360,
     height: 450,
     show: false,
     frame: false,
@@ -118,6 +118,9 @@ app.on('activate', function() {
   // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) {
     createWindow();
+  }
+  if (!tray) {
+    createTray();
   }
 });
 
